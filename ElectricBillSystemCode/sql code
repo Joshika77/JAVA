@@ -1,0 +1,9 @@
+USE billing_db;
+
+CREATE TABLE billing_details (
+    bill_id INT AUTO_INCREMENT PRIMARY KEY,   -- Bill ID, automatically increments
+    customer_name VARCHAR(255) NOT NULL,       -- Customer's Name (text field)
+    customer_address VARCHAR(255),             -- Customer's Address (text field)
+    amount DECIMAL(10, 2) NOT NULL,            -- Billing amount (decimal value, 2 decimal points)
+    date DATE NOT NULL                         -- Date of the bill (in 'YYYY-MM-DD' format)
+);
